@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="static/images/favicon.png" />
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pizzaria Martchello</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Cadastre-se</li>
+            <li>Pedidos-Restaurante</li>
+            <li>Pedidos-clientes</li>
+        </ul>
+    </nav>
+
+    <section class="carrinho-menu">
+        <div class="menu-openner"><span>0</span>🛒</div>
+    </section>
+
+    <section class="inicio">
+        <!-- aside do carrinho -->
+        <aside>
+           <div class="cart--area">
+               <div class="menu-closer">❌</div>
+               <h1>Suas Pizzas</h1>
+               <div class="cart"></div>
+               <div class="cart--details">
+                   <div class="cart--totalitem subtotal">
+                       <span>Subtotal</span>
+                       <span>R$ --</span>
+                   </div>
+                   <div class="cart--totalitem desconto">
+                       <span>Desconto</span>
+                       <span>R$ --</span>
+                   </div>
+                   <div class="cart--totalitem total big">
+                       <span>Total</span>
+                       <span>R$ --</span>
+                   </div>
+                   <div class="cart--finalizar">Finalizar a compra</div>
+               </div>
+           </div>
+       </aside>
+       <!-- /aside do carrinho -->
+       <header>
+
+        <div class="Conteudo">
+            <h1>Pizzaria Martchello</h1>
+            <div>
+            <h2>Mama mia martchello!</h2>
+            <a href="#PizzasProntas" class="vermenu">Ver menu</a>
+
+            <a href="#PizzasProntas" class="vermenumobile"><img src="./images/seta_pra_baixo-removebg-preview.png" alt=""></a>
+        </div>
+
+        </div>
+        <img class="img-pizza" src="https://pngimg.com/uploads/pizza/pizza_PNG7137.png" alt="pizza">
+
+    </header>
+</section>
+
+<!-- modelos de pizza na lista e no carrinho -->
+   <div class="models">
+
+       <!-- pizza na lista -->
+       <div class="pizza-item">
+           <a href="">
+               <div class="pizza-item--img"><img src="" /></div>
+               <div class="pizza-item--add">+</div>
+           </a>
+           <div class="pizza-item--price">R$ --</div>
+           <div class="pizza-item--name">--</div>
+           <div class="pizza-item--desc">--</div>
+       </div>
+        <!-- pizza no carrinho -->
+   <div class="cart--item">
+       <img src="" />
+       <div class="cart--item-nome">--</div>
+       <div class="cart--item--qtarea">
+           <button class="cart--item-qtmenos">-</button>
+           <div class="cart--item--qt">1</div>
+           <button class="cart--item-qtmais">+</button>
+       </div>
+   </div>
+
+</div>
+<main>
+
+
+   <h2 id="PizzasProntas">Pizzas Prontas</h2>
+
+   <div class="pizza-area"></div>
+
+<!-- /conteudo principal -->
+
+
+
+<!-- janela modal .pizzaWindowArea -->
+<div class="pizzaWindowArea">
+   <div class="pizzaWindowBody">
+       <div class="pizzaInfo--cancelMobileButton">Voltar</div>
+       <div class="pizzaBig">
+           <img src="" />
+       </div>
+       <div class="pizzaInfo">
+           <h1>--</h1>
+           <div class="pizzaInfo--desc">--</div>
+           <div class="pizzaInfo--sizearea">
+               <div class="pizzaInfo--sector">Tamanho</div>
+               <div class="pizzaInfo--sizes">
+                   <div data-key="P" class="pizzaInfo--size">PEQUENA <span>--</span></div>
+                   <div data-key="M" class="pizzaInfo--size">MÉDIA <span>--</span></div>
+                   <div data-key="G" class="pizzaInfo--size selected">GRANDE <span>--</span></div>
+               </div>
+           </div>
+           <div class="pizzaInfo--pricearea">
+               <div class="pizzaInfo--sector">Preço</div>
+               <div class="pizzaInfo--price">
+                   <div class="pizzaInfo--actualPrice">R$ --</div>
+                   <div class="pizzaInfo--qtarea">
+                       <button class="pizzaInfo--qtmenos">-</button>
+                       <div class="pizzaInfo--qt">1</div>
+                       <button class="pizzaInfo--qtmais">+</button>
+                   </div>
+               </div>
+           </div>
+           <div class="pizzaInfo--addButton">Adicionar ao carrinho</div>
+           <div class="pizzaInfo--cancelButton">Cancelar</div>
+       </div>
+   </div>
+</div>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img style="width:90px ;" src="https://images.vexels.com/media/users/3/197251/isolated/lists/6cfbab7e0350f9ed97967c04f2619d97-chef-bonito-com-pizza.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Mama mia martchello!</h4>
+                    <p class="chatbox__description--header">Meu nome é Arthurito. como posso ajudar?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
+</main>
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='pizzas.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

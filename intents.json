@@ -1,0 +1,66 @@
+{
+  "intents": [
+    {
+      "tag": "Saudacao",
+      "patterns": [
+        "Ola, eu gostaria de fazer um pedido",
+        "Boa noite, quero fazer um pedido",
+        "Você poderia anotar o meu pedido ?"
+      ],
+      "responses": [
+        "Ola, boa noite, irei anotar o seu pedido, que tamanho de pizza deseja ?"
+      ]
+    },
+    {
+      "tag": "tamanho_pequeno",
+      "patterns": [
+        "Eu desejo uma pizza de tamanho pequeno"
+      ],
+      "responses": [
+        "Exelente escolha! uma pizza pequena, quantos sabores na pizza você deseja?"
+      ]
+    },
+    {
+      "tag": "tamanho_medio",
+      "patterns": [
+        "Eu desejo uma pizza de tamanho media"
+      ],
+      "responses": [
+        "Exelente escolha! uma pizza media, quantos sabores na pizza você deseja?"
+      ]
+    },
+{
+      "tag": "tamanho_grande",
+      "patterns": [
+        "Eu desejo uma pizza de tamanho media"
+      ],
+      "responses": [
+        "Exelente escolha! uma pizza grande, quantos sabores na pizza voce deseja?"
+      ]
+    },
+    {
+      "tag": "meio-a-meio",
+      "patterns": [
+        "Eu desejo uma pizza sabor meio a meio, meio calabresa e meio quatro queijos",
+        "Eu desejo uma pizza sabor meio a meio, meio quatro queijos e meio calabresa",
+        "Eu desejo uma pizza sabor meio a meio, meio americana e meio calabresa",
+        "Eu desejo uma pizza sabor meio a meio, meio calabresa e meio americana",
+        "Eu desejo uma pizza sabor meio a meio, meio calabresa e meio americana",
+        "Eu desejo uma pizza sabor meio a meio, meio calabresa e meio Frango"
+      ],
+      "responses": [
+        "Uma pizza meio a meio,  otimo pedido! a pizza ficara R$xx.xx reais, ela ficara pronta em xx:xx horas, vai retirar ou deseja um entregador ?"
+      ]
+    },
+    {
+      "tag": "entregador",
+      "patterns": [
+        "Eu quero um entregador"
+      ],
+      "responses": [
+        "Maravilha! o entregador chegara em XX:XX horas, obrigado pela preferencia"
+      ]
+    }
+
+  ]
+}
