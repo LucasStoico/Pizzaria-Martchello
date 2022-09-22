@@ -922,3 +922,159 @@ h2 {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+
+/*FOOTER DA PAGINA*/
+
+footer{
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+    color: #d9d9d9;
+  }
+  
+  .main-content{
+    display: flex;
+  }
+  
+  .main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+  }
+  
+  .box h2{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+  }
+  
+  .box .content:after{
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 2px;
+    background: #d32f2f;
+    top: -10px;
+  }
+  
+  .box .content:before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+    top: -10px;
+  }
+  
+  .left .content .social{
+    margin: 40px 0 0 90px;
+  }
+  
+  .left .content .social a{
+    padding: 0 5px;
+  }
+  
+  .left .content .social a span{
+    width: 80px;
+    height: 80px; 
+    background: #1a1a1a;
+    margin-left: 9px;
+    text-align: center;
+    line-height: 78px;
+    border-radius: 50%;
+    font-size: 30px; 
+    transition: 0.3s;
+    color: #fff;
+  }
+  
+  .left .content .social a span:hover{
+    background: #d32f2f;
+  }
+  
+  .content-p{
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .center .content .fas{
+    font-size: 23px;
+    background: #1a1a1a;
+    width: 45px;
+    height: 45px ;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .center .content .fas:hover{
+    background: #d32f2f;
+  }
+  
+  .center .content .text{
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+  }
+  
+  .center .content .telefone{
+    margin: 10px 0;
+  }
+  
+  .center .content .email{
+    margin-top: 10px;
+  }
+  
+  
+  .right .content .fas{
+    font-size: 23px;
+    background: #1a1a1a;
+    width: 45px;
+    height: 45px ;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .right .content .fas:hover{
+    background: #d32f2f;
+  }
+  
+  .right .content .text{
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+  }
+  
+  .right .content .endereco{
+    margin: 10px 0;
+  }
+  
+  .right .content .cep{
+    margin-top: 10px;
+  }
+  
+  .bottom .center{
+    padding: 5px;
+    font-size: 15px;
+    background: #151515;
+    text-align: center;
+  }
+  
+  .bottom .center span{
+    color: #656565;
+  }
+  
+  .bottom .center a{
+    color: #d32f2f;
+    text-decoration: none;
+  }
+  

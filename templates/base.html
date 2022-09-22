@@ -2,6 +2,7 @@
 <html lang="en">
 <link rel="icon" href="static/images/favicon.png" />
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
 <head>
     <meta charset="UTF-8">
@@ -158,11 +159,70 @@
     </div>
 </div>
 </main>
+<!--footer-->
+<footer>
+    <div class="main-content">
+        <div class="left box">
+            <h2>redes sociais</h2>
+            <div class="content">
+                <p class="content-p">Você pode nos seguir nas seguintes plataformas!</p>
+                <div class="social">
+                    <a href="#"><span class="fab fa-facebook-f"></span></a>
+                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href="#"><span class="fab fa-instagram"></span></a>
+                    <a href="#"><span class="fab fa-youtube"></span></a>
+                </div>
+            </div>
+        </div>
+        <!--left-->
+        <div class="center box">
+            <h2>informações adicionais</h2>
+            <div class="content">
+                <div class="cnpj">                        
+                    <span class="fas fa-bookmark"></span>
+                    <span class="text">XX. XXX. XXX/0001-XX</span>
+                </div>
+
+                <div class="telefone">
+                    <span class="fas fas fa-phone-alt"></span>
+                    <span class="text">+55 11 9999-9999</span>
+                </div>
+
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">exemplo@exemplo.com</span>
+                </div>
+            </div>
+        </div>
+        <!--right-->
+        <div class="right box">
+            <h2>Martchello São Paulo</h2>
+            <div class="content">
+                <div class="endereco">                        
+                    <span class="fas fa-house"></span>
+                    <span class="text">Rua Xpto 999 - Jardins São Paulo-SP</span>
+                </div>
+
+                <div class="cep">
+                    <span class="fas fa-globe"></span>
+                    <span class="text">CEP 01234-567</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--bottom-->
+    
+    <div class="bottom">
+        <div class="center">
+            <span class="credit">© 2022 São Paulo BRAZIL, inc. All rights reserved.</span>
+        </div>
+    </div>
     <script>
         $SCRIPT_ROOT = {{ request.script_root|tojson }};
     </script>
     <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='pizzas.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="https://kit.fontawesome.com/e32382d952.js" crossorigin="anonymous"></script>
 </body>
 </html>
